@@ -2,8 +2,8 @@
 using Terraria;
 using log4net.Appender;
 using Terraria.ID;
-using Terraria.GameContent.ItemDropRules;
 
+using Deus.TestingMayContainOtherPeopleCode;
 
 namespace Deus.Core.Globals
 {
@@ -13,10 +13,7 @@ namespace Deus.Core.Globals
         {
             if (shop.NpcType == NPCID.Merchant)
             {
-
-               
-
-
+                shop.Add<LovecraftPaper>();
             }
         }
     }

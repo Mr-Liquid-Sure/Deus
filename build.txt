@@ -1,0 +1,4 @@
+displayName = The Deus Mod
+author = Mr Liquid
+version = 0.1
+dllReferences = StructureHelper

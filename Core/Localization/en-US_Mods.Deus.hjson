@@ -42,6 +42,11 @@ Items: {
 		DisplayName: Lovecraft Paper
 		Tooltip: ""
 	}
+
+	Book11: {
+		DisplayName: A Gods Guide 
+		Tooltip: ""
+	}
 }
 
 Projectiles.GunBarrelFlash.DisplayName: Gun Barrel Flash

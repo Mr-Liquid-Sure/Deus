@@ -39,12 +39,12 @@ Items: {
 	}
 
 	LovecraftPaper: {
-		DisplayName: Lovecraft Paper
+		DisplayName: NothingTest
 		Tooltip: ""
 	}
 
 	Book11: {
-		DisplayName: A Gods Guide 
+		DisplayName: A gods guide
 		Tooltip: ""
 	}
 }

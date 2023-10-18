@@ -4,42 +4,47 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.UI;
 using System.Collections.Generic;
+using Deus.Core.DeusPlayer;
 
 namespace Deus.Content.Items.UI.Book1
 {
-    
-    [Autoload(Side = ModSide.Client)] 
+
+    [Autoload(Side = ModSide.Client)]
     public class UiSystem : ModSystem
     {
-        private UserInterface exampleCoinUserInterface;
-        internal UiBar exampleCoinsUI;
+        public UserInterface MainUserInterface;
+        internal UiBar MainUI;
 
+        public void GoBack()
+        {
+            MainUserInterface.GoBack();
+        }
         public void ShowMyUI()
         {
-            exampleCoinUserInterface?.SetState(exampleCoinsUI);
+            MainUserInterface?.SetState(MainUI);
         }
 
         public void HideMyUI()
         {
-            exampleCoinUserInterface?.SetState(null);
+            MainUserInterface?.SetState(null);
         }
 
         public override void Load()
         {
-            exampleCoinUserInterface = new UserInterface();
-            exampleCoinsUI = new UiBar();
+            MainUserInterface = new UserInterface();
+            MainUI = new UiBar();
 
-            exampleCoinsUI.Activate();
+            MainUI.Activate();
         }
 
         public override void UpdateUI(GameTime gameTime)
         {
-            
-            if (exampleCoinUserInterface?.CurrentState != null)
-                exampleCoinUserInterface?.Update(gameTime);
+
+            if (MainUserInterface?.CurrentState != null)
+                MainUserInterface?.Update(gameTime);
         }
 
-    
+
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
             int mouseTextIndex = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Mouse Text"));
@@ -47,18 +52,19 @@ namespace Deus.Content.Items.UI.Book1
             {
                 layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer(
                     "ExampleMod: Coins Per Minute",
-                    delegate {
-                        if (exampleCoinUserInterface?.CurrentState != null)
-                            exampleCoinUserInterface.Draw(Main.spriteBatch, new GameTime());
+                    delegate
+                    {
+                        if (MainUserInterface?.CurrentState != null)
+                            MainUserInterface.Draw(Main.spriteBatch, new GameTime());
                         return true;
                     },
                     InterfaceScaleType.UI)
                 );
             }
         }
+
+
+
     }
-
-
-
 
 }

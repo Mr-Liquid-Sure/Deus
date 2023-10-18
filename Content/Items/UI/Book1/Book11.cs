@@ -1,4 +1,5 @@
-﻿using Deus.Core.Systems;
+﻿using Deus.Core.DeusPlayer;
+using Deus.Core.Systems;
 using Deus.TestingMayContainOtherPeopleCode.UITest;
 using Terraria;
 using Terraria.Audio;
@@ -19,9 +20,7 @@ namespace Deus.Content.Items.UI.Book1
         {
             Item.width = 20;
             Item.height = 20;
-            //Item.rare = ModContent.RarityType<ModRarities>();
             Item.maxStack = 1;
-            //Item.UseSound = rorAudio.SFX_Scroll;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.useAnimation = 1;
             Item.useTime = 1;
@@ -32,7 +31,6 @@ namespace Deus.Content.Items.UI.Book1
         public override void AddRecipes()
         {
             CreateRecipe()
-              //  .AddIngredient(ModContent.ItemType<Parchment>(), 15)
 
                 .AddTile(TileID.WorkBenches)
                 .Register();
@@ -40,8 +38,23 @@ namespace Deus.Content.Items.UI.Book1
 
         public override bool? UseItem(Player player)
         {
+            if (ModContent.GetInstance<UiSystem>().MainUserInterface.CurrentState == null && player.whoAmI == Main.myPlayer)
+            {
+                ModContent.GetInstance<UiSystem>().ShowMyUI();
+                SoundEngine.PlaySound(SoundID.MenuOpen);
+                return true;
+            }else if (player.whoAmI == Main.myPlayer)
+            {
+                SoundEngine.PlaySound(SoundID.MenuClose);
+                ModContent.GetInstance<UiSystem>().HideMyUI();
+                return true;
+            }
+
             ModContent.GetInstance<UiSystem>().ShowMyUI();
+            
+            
             SoundEngine.PlaySound(SoundID.MenuOpen);
+
             return base.UseItem(player);
         }
     }

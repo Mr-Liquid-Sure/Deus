@@ -21,4 +21,7 @@
       <HintPath>StructureHelper.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\UIassets\" />
+  </ItemGroup>
 </Project>

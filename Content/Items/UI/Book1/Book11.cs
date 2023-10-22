@@ -1,5 +1,5 @@
 ﻿using Deus.Core.DeusPlayer;
-using Deus.Core.Systems;
+using Deus.Common.Systems;
 using Deus.TestingMayContainOtherPeopleCode.UITest;
 using Terraria;
 using Terraria.Audio;

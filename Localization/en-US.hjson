@@ -17,11 +17,11 @@ Mods: {
 		Items: {
 			WoodenPendant: {
 				DisplayName: Wooden Pendant
-				Tooltip: 
-					 '''
-					 Double click up, to summon a ring of grass around you, which decreases enemy defence.
-					 Has a 10 second cooldown.
-					 '''
+				Tooltip:
+					'''
+					Double click up, to summon a ring of grass around you, which decreases enemy defence.
+					Has a 10 second cooldown.
+					'''
 			}
 
 			PewterOre: {
@@ -58,12 +58,16 @@ Mods: {
 				DisplayName: Lovecraft Paper
 				Tooltip: ""
 			}
+
+			Book11: {
+				DisplayName: Book11
+				Tooltip: ""
+			}
 		}
 	}
 }
 
 DamageClasses.Heretic.DisplayName: Heretic Damage
-
 Projectiles.GunBarrelFlash.DisplayName: Gun Barrel Flash
 Tiles.PewterOreTile.MapEntry: Pewter Ore Tile
 

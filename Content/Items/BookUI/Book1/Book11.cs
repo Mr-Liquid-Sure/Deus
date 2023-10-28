@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Deus.Content.Items.UI.Book1
+namespace Deus.Content.Items.BookUI.Book1
 {
     public class Book11 : ModItem
     {

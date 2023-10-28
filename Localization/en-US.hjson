@@ -63,7 +63,19 @@ Mods: {
 				DisplayName: Book11
 				Tooltip: ""
 			}
+
+			PumpkinPainting: {
+				DisplayName: Pumpkin Painting
+				Tooltip: ""
+			}
+
+			ChippedWoodenCross: {
+				DisplayName: Chipped Wooden Cross
+				Tooltip: ""
+			}
 		}
+
+		Projectiles.WoodenCrossProj.DisplayName: Wooden Cross Proj
 	}
 }
 

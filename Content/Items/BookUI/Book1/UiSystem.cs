@@ -6,7 +6,7 @@ using Terraria.UI;
 using System.Collections.Generic;
 using Deus.Core.DeusPlayer;
 
-namespace Deus.Content.Items.UI.Book1
+namespace Deus.Content.Items.BookUI.Book1
 {
 
     [Autoload(Side = ModSide.Client)]

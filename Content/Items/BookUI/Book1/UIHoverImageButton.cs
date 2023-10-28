@@ -7,7 +7,7 @@ using Humanizer;
 using Terraria.GameContent.UI.Elements;
 using ReLogic.Content;
 
-namespace Deus.Content.Items.UI.Book1
+namespace Deus.Content.Items.BookUI.Book1
 {
     
     internal class UIHoverImageButton : UIImageButton

@@ -14,7 +14,7 @@ using rail;
 using static System.Net.Mime.MediaTypeNames;
 using System.Xml.Linq;
 
-namespace Deus.Content.Items.UI.Book1
+namespace Deus.Content.Items.BookUI.Book1
 {
     class UiBar : UIState
     {

@@ -48,7 +48,7 @@ namespace Deus.Core.UI.CrossUi
             area.Append(frame);
             Append(area);
         }
-
+        
         private void SetRectangle(UIElement uiElement, float left, float top, float width, float height)
         {
             uiElement.Left.Set(left, 0f);

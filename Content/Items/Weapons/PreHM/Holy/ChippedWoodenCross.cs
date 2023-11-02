@@ -65,6 +65,10 @@ namespace Deus.Content.Items.Weapons.PreHM.Holy
                     Perc++;
 
                     SoundEngine.PlaySound(SoundID.Item9, pro.position);
+                    Vector2 speed = Main.rand.NextVector2CircularEdge(2f, 2f);
+                    var d = Dust.NewDustPerfect(Item.Center, DustID.GreenTorch, speed * 5, Scale: 3f);
+                    ;
+                    d.noGravity = true;
                     Vector2 SpawnLoc = new Vector2(mouse.X - 96, mouse.Y - 900);
                     int select = Main.rand.Next(2, 5);
                     if (select == 1)
@@ -83,19 +87,7 @@ namespace Deus.Content.Items.Weapons.PreHM.Holy
         }
         public void Charge(Player player)
         {
-            if (ModContent.GetInstance<CrossUISystem>().InterUI.CurrentState == null && player.whoAmI == Main.myPlayer)
-            {
-                ModContent.GetInstance<CrossUISystem>().ShowMyUI();
-                SoundEngine.PlaySound(SoundID.MenuOpen);
-                
-            }
-            else if (player.whoAmI == Main.myPlayer)
-            {
-                SoundEngine.PlaySound(SoundID.MenuClose);
-                ModContent.GetInstance<CrossUISystem>().HideMyUI();
-                
-            }
-            ModContent.GetInstance<CrossUISystem>().ShowMyUI();
+           
 
         }
         public override void AddRecipes()

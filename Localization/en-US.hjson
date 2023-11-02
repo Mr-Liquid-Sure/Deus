@@ -73,9 +73,17 @@ Mods: {
 				DisplayName: Chipped Wooden Cross
 				Tooltip: ""
 			}
+
+			CrystalClusterBlade: {
+				DisplayName: Crystal Cluster Blade
+				Tooltip: ""
+			}
 		}
 
-		Projectiles.WoodenCrossProj.DisplayName: Wooden Cross Proj
+		Projectiles: {
+			WoodenCrossProj.DisplayName: Wooden Cross Proj
+			CrystalClusterProj.DisplayName: Crystal Cluster Proj
+		}
 	}
 }
 

@@ -1,5 +1,0 @@
-C:\Users\mandk\Documents\My Games\Terraria\tModLoader\ModSources\Deus\obj\Debug\net6.0\Deus.csproj.AssemblyReference.cache
-C:\Users\mandk\Documents\My Games\Terraria\tModLoader\ModSources\Deus\obj\Debug\net6.0\Deus.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mandk\Documents\My Games\Terraria\tModLoader\ModSources\Deus\obj\Debug\net6.0\Deus.AssemblyInfoInputs.cache
-C:\Users\mandk\Documents\My Games\Terraria\tModLoader\ModSources\Deus\obj\Debug\net6.0\Deus.AssemblyInfo.cs
-C:\Users\mandk\Documents\My Games\Terraria\tModLoader\ModSources\Deus\obj\Debug\net6.0\Deus.csproj.CoreCompileInputs.cache

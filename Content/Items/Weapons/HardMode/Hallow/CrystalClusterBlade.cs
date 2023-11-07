@@ -18,11 +18,11 @@ namespace Deus.Content.Items.Weapons.HardMode.Hallow
         {
             Item.damage = 14;
             Item.DamageType = DamageClass.Melee;
-            Item.autoReuse = true;
+            Item.autoReuse = false;
             Item.width = 32;
             Item.height = 36;
-            Item.useTime = 20;
-            Item.useAnimation = 20;
+            Item.useTime = 43;
+            Item.useAnimation = 43;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 3f;
             Item.value = Item.buyPrice(0, 0, 87, 34);
@@ -35,10 +35,7 @@ namespace Deus.Content.Items.Weapons.HardMode.Hallow
 
         public override void MeleeEffects(Player player, Rectangle hitbox)
         {
-            Vector2 speed = Main.rand.NextVector2CircularEdge(2f, 2f);
-            var d = Dust.NewDustPerfect(Item.Center, DustID.RainbowTorch, speed * 5, Scale: 3f);
-            ;
-            d.noGravity = true;
+           
         }
         public override void AddRecipes()
         {

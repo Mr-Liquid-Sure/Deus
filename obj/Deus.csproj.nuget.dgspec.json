@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {}
+    "C:\\Users\\eletro\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {
+    "C:\\Users\\eletro\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
+        "projectUniqueName": "C:\\Users\\eletro\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
         "projectName": "Deus",
-        "projectPath": "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
-        "packagesPath": "C:\\Users\\mandk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\obj\\",
+        "projectPath": "C:\\Users\\eletro\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
+        "packagesPath": "C:\\Users\\eletro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eletro\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mandk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\eletro\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,8 +49,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

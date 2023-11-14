@@ -93,14 +93,6 @@ namespace Deus.Content.Items.Accessories
                         {
                             Player.AddBuff(ModContent.BuffType<WoodenPendantBuff>(), 750);
                             SoundEngine.PlaySound(SoundID.MaxMana, Player.position);
-
-                            for (int i = 0; i < 80; i++)
-                            {
-                                Vector2 speed = Main.rand.NextVector2CircularEdge(2f, 2f);
-                                var d = Dust.NewDustPerfect(Player.Center, DustID.GreenTorch, speed * 5, Scale: 3f);
-                                ;
-                                d.noGravity = true;
-                            }
                             break;
 
                         }

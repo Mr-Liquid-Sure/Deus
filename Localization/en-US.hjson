@@ -1,6 +1,13 @@
 Mods: {
 	Deus: {
-		Tiles.PewterOreTile.MapEntry: Pewter Ore Tile
+		Tiles: {
+			PewterOreTile.MapEntry: Pewter Ore Tile
+			EdenSoilTile.MapEntry: Eden Soil Tile
+			EdenSoilGrassTile.MapEntry: Eden Soil Grass Tile
+			EdenSoilLongGrass.MapEntry: Eden Soil Long Grass
+			EdenMushroomT.MapEntry: Eden Mushroom T
+			EdenMushroomT2.MapEntry: Eden Mushroom T2
+		}
 
 		Buffs: {
 			WoodenPendantBuff: {
@@ -76,6 +83,16 @@ Mods: {
 
 			CrystalClusterBlade: {
 				DisplayName: Crystal Cluster Blade
+				Tooltip: ""
+			}
+
+			EdenSoil: {
+				Tooltip: ""
+				DisplayName: Eden Soil
+			}
+
+			Ventriciser: {
+				DisplayName: Ventriciser
 				Tooltip: ""
 			}
 		}

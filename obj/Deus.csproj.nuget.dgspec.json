@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {}
+    "C:\\Users\\USER\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {
+    "C:\\Users\\USER\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
         "projectName": "Deus",
-        "projectPath": "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
-        "packagesPath": "C:\\Users\\mandk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\obj\\",
+        "projectPath": "C:\\Users\\USER\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mandk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

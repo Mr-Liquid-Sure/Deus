@@ -31,7 +31,7 @@ namespace Deus.Content.Items.Weapons.PreHM.Holy
         public override void SetDefaults()
         {
             Item.damage = 14;
-            Item.DamageType = ModContent.GetInstance<Heretic>();
+            Item.DamageType = ModContent.GetInstance<HereticDamage>();
             Item.width = 32;
             Item.height = 36;
             Item.useTime = 50;

@@ -7,6 +7,7 @@ Mods: {
 			EdenSoilLongGrass.MapEntry: Eden Soil Long Grass
 			EdenMushroomT.MapEntry: Eden Mushroom T
 			EdenMushroomT2.MapEntry: Eden Mushroom T2
+			EdenStoneTile.MapEntry: Eden Stone Tile
 		}
 
 		Buffs: {
@@ -95,11 +96,17 @@ Mods: {
 				DisplayName: Ventriciser
 				Tooltip: ""
 			}
+
+			EdenStoneWall: {
+				DisplayName: Eden Stone Wall
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
 			WoodenCrossProj.DisplayName: Wooden Cross Proj
 			CrystalClusterProj.DisplayName: Crystal Cluster Proj
+			VetSpearProj.DisplayName: Vet Spear Proj
 		}
 	}
 }

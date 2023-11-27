@@ -1,6 +1,13 @@
 Mods: {
 	Deus: {
-		Tiles.PewterOreTile.MapEntry: Pewter Ore Tile
+		Tiles: {
+			PewterOreTile.MapEntry: Pewter Ore Tile
+			EdenSoilTile.MapEntry: Eden Soil Tile
+			EdenSoilGrassTile.MapEntry: Eden Soil Grass Tile
+			EdenSoilLongGrass.MapEntry: Eden Soil Long Grass
+			EdenMushroomT.MapEntry: Eden Mushroom T
+			EdenMushroomT2.MapEntry: Eden Mushroom T2
+		}
 
 		Buffs: {
 			WoodenPendantBuff: {
@@ -17,11 +24,11 @@ Mods: {
 		Items: {
 			WoodenPendant: {
 				DisplayName: Wooden Pendant
-				Tooltip: 
-					 '''
-					 Double click up, to summon a ring of grass around you, which decreases enemy defence.
-					 Has a 10 second cooldown.
-					 '''
+				Tooltip:
+					'''
+					Double click up, to summon a ring of grass around you, which decreases enemy defence.
+					Has a 10 second cooldown.
+					'''
 			}
 
 			PewterOre: {
@@ -58,12 +65,46 @@ Mods: {
 				DisplayName: Lovecraft Paper
 				Tooltip: ""
 			}
+
+			Book11: {
+				DisplayName: Book11
+				Tooltip: ""
+			}
+
+			PumpkinPainting: {
+				DisplayName: Pumpkin Painting
+				Tooltip: ""
+			}
+
+			ChippedWoodenCross: {
+				DisplayName: Chipped Wooden Cross
+				Tooltip: ""
+			}
+
+			CrystalClusterBlade: {
+				DisplayName: Crystal Cluster Blade
+				Tooltip: ""
+			}
+
+			EdenSoil: {
+				Tooltip: ""
+				DisplayName: Eden Soil
+			}
+
+			Ventriciser: {
+				DisplayName: Ventriciser
+				Tooltip: ""
+			}
+		}
+
+		Projectiles: {
+			WoodenCrossProj.DisplayName: Wooden Cross Proj
+			CrystalClusterProj.DisplayName: Crystal Cluster Proj
 		}
 	}
 }
 
 DamageClasses.Heretic.DisplayName: Heretic Damage
-
 Projectiles.GunBarrelFlash.DisplayName: Gun Barrel Flash
 Tiles.PewterOreTile.MapEntry: Pewter Ore Tile
 

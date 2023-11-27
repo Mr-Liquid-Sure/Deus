@@ -4,12 +4,13 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Terraria.Localization;
 using System;
+using Deus.Common.Systems.ParticleSystem;
+using Deus.Content.Particles;
+
 namespace Deus.Content.Buffs.PreHM
 {
     class WoodenPendantBuff : ModBuff
     {
-        
-
         public override void SetStaticDefaults() {
 			Main.buffNoTimeDisplay[Type] = true;
 			Main.buffNoSave[Type] = true;
@@ -17,8 +18,8 @@ namespace Deus.Content.Buffs.PreHM
         public override LocalizedText Description => base.Description;
         public override void Update(Player player, ref int buffIndex)
         {
-            double distance = 50;
-            for (int i = 0; i < 90; i++) 
+            float distance = 100;
+            /*for (int i = 0; i < 90; i++) 
             {
                  
                  double deg = i * 4;
@@ -28,11 +29,19 @@ namespace Deus.Content.Buffs.PreHM
                  int dust = Dust.NewDust(new Vector2(xd, yd), 3, 3, DustID.JungleTorch, 0f, 0f, 0, new Color(175, 160, 120), 1f);
                  Main.dust[dust].noGravity = true;
 
-                //Vector2 speed = Main.rand.NextVector2CircularEdge(1f, 1f);
-               // var d = Dust.NewDustPerfect(Main.player[i].Center, DustID.Grass, speed * 5, Scale: 3f);
-               // ;
-               // d.noGravity = true;
-                
+            }*/
+            for (int i = 0; i < 2; i++)
+            {
+                float dist = Main.rand.NextFloat(distance - 10, distance + 10);
+                float rot = Main.rand.NextFloat(0, MathHelper.TwoPi);
+                Vector2 pos = player.Center + rot.ToRotationVector2() * dist;
+                Vector2 vel = (pos - player.Center).SafeNormalize(Vector2.Zero).RotatedBy(MathHelper.PiOver2) * Main.rand.NextFloat(10f, 14f);
+                Particle.NewParticle<Wind>(pos, vel, Color.Green, 1f, 1f, 0f, player.whoAmI, player.velocity.X, player.velocity.Y);
+
+                if (Main.rand.NextBool(10) && Collision.CanHitLine(player.Center, 0, 0, pos, 0, 0))
+                {
+                    Gore.NewGore(null, pos, vel, GoreID.TreeLeaf_Normal, 0.7f);
+                }
             }
             for (int i = 0; i<200; i++){
                 if (((Main.npc[i].Center.X-player.Center.X)*(Main.npc[i].Center.X-player.Center.X))+((Main.npc[i].Center.Y-player.Center.Y)*(Main.npc[i].Center.Y-player.Center.Y))<(distance *distance)){

@@ -6,7 +6,7 @@ using Terraria.UI;
 using Humanizer;
 using Terraria.GameContent.UI.Elements;
 
-namespace Deus.Content.Items.UI.Book1
+namespace Deus.Content.Items.BookUI.Book1
 {
     
     public class DragableUIPanel : UIPanel

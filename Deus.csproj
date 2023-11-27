@@ -24,6 +24,4 @@
   <ItemGroup>
     <Folder Include="Assets\UIassets\" />
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
 </Project>

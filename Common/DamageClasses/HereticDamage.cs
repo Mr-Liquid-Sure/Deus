@@ -2,7 +2,7 @@
 
 namespace Deus.Common.DamageClasses
 {
-    public class Heretic : DamageClass
+    public class HereticDamage : DamageClass
     {
         public override StatInheritanceData GetModifierInheritance(DamageClass damageClass)
         {

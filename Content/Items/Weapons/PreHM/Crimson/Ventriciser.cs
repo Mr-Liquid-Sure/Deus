@@ -1,5 +1,6 @@
 using Deus.Common.DamageClasses;
 using Deus.Content.Items.BookUI.Book1;
+using Deus.Content.Projectiles.CrimsonProj;
 using Deus.Content.Projectiles.HolyProj;
 using Deus.Core.UI.CrossUi;
 using Microsoft.Xna.Framework;
@@ -44,7 +45,7 @@ namespace Deus.Content.Items.Weapons.PreHM.Crimson
 
             // Projectile Properties
             Item.shootSpeed = 3.7f; // The speed of the projectile measured in pixels per frame.
-           // Item.shoot = ModContent.ProjectileType<ExampleSpearProjectile>(); // The projectile that is fired from this weapon
+            Item.shoot = ModContent.ProjectileType<VetSpearProj>(); // The projectile that is fired from this weapon
         }
 
         public override bool CanUseItem(Player player)

@@ -13,6 +13,7 @@ namespace Deus.Content.Tiles.EdenSanctuaryTiles
         {
             Main.tileMergeDirt[Type] = true;
 
+            Deus.tileMerge[Type, Mod.Find<ModTile>("EdenSoilGrassTile").Type] = true;
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
             Main.tileLighted[Type] = true;

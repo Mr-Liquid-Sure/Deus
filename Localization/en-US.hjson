@@ -8,6 +8,7 @@ Mods: {
 			EdenMushroomT.MapEntry: Eden Mushroom T
 			EdenMushroomT2.MapEntry: Eden Mushroom T2
 			EdenStoneTile.MapEntry: Eden Stone Tile
+			EdenMushroomTile.MapEntry: Eden Mushroom Tile
 		}
 
 		Buffs: {
@@ -101,12 +102,19 @@ Mods: {
 				DisplayName: Eden Stone Wall
 				Tooltip: ""
 			}
+
+			PewterSword: {
+				DisplayName: Pewter Sword
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
 			WoodenCrossProj.DisplayName: Wooden Cross Proj
 			CrystalClusterProj.DisplayName: Crystal Cluster Proj
 			VetSpearProj.DisplayName: Vet Spear Proj
+			ExampleCustomSwingProjectile.DisplayName: Example Custom Swing Projectile
+			PewterSwordProjectile.DisplayName: Pewter Sword Projectile
 		}
 	}
 }

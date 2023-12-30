@@ -115,6 +115,7 @@ Mods: {
 			VetSpearProj.DisplayName: Vet Spear Proj
 			ExampleCustomSwingProjectile.DisplayName: Example Custom Swing Projectile
 			PewterSwordProjectile.DisplayName: Pewter Sword Projectile
+			VetSpike.DisplayName: Vet Spike
 		}
 	}
 }

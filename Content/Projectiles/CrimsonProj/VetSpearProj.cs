@@ -7,10 +7,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Deus.Content.Projectiles.CrimsonProj
-{
+{       //Code is copied from example mod cause im lazy as hell and its very easy so it fine :D <3
     public class VetSpearProj : ModProjectile
     {
-        // Define the range of the Spear Projectile. These are overridable properties, in case you'll want to make a class inheriting from this one.
         protected virtual float HoldoutRangeMin => 24f;
         protected virtual float HoldoutRangeMax => 96f;
 
@@ -18,7 +17,7 @@ namespace Deus.Content.Projectiles.CrimsonProj
         {
             Projectile.CloneDefaults(ProjectileID.Spear); // Clone the default values for a vanilla spear. Spear specific values set for width, height, aiStyle, friendly, penetrate, tileCollide, scale, hide, ownerHitCheck, and melee.
         }
-
+       
         public override bool PreAI()
         {
             Player player = Main.player[Projectile.owner]; // Since we access the owner player instance so much, it's useful to create a helper local variable for this

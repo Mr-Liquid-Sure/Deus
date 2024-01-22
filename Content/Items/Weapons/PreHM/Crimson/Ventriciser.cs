@@ -31,10 +31,10 @@ namespace Deus.Content.Items.Weapons.PreHM.Crimson
             Item.useStyle = ItemUseStyleID.Shoot; 
             Item.useAnimation = 12; 
             Item.useTime = 18; 
-            Item.UseSound = SoundID.Item71; 
+            Item.UseSound = SoundID.Item1; 
             Item.autoReuse = true; 
             Item.damage = 9;
-            Item.knockBack = 6.5f;
+            Item.knockBack = 0f;
             Item.noUseGraphic = true; 
             Item.DamageType = DamageClass.Melee;
             Item.noMelee = true; 
@@ -47,9 +47,12 @@ namespace Deus.Content.Items.Weapons.PreHM.Crimson
             
             for (int i = 0; i < 80; i++)
             {
-                Vector2 speed = Main.rand.NextVector2CircularEdge(1f, 1f);
-                Dust d = Dust.NewDustPerfect(Main.LocalPlayer.Center, DustID.CrimtaneWeapons, speed * 10, Scale: 1f); ;
-                d.noGravity = true;
+                int dust1 = Dust.NewDust(position, 0, 0, DustID.Crimson);
+                Main.dust[dust1].noGravity = true;
+                Main.dust[dust1].position += Main.rand.NextVector2CircularEdge(12.5f, 4.5f).RotatedBy(velocity.ToRotation() + MathHelper.PiOver2) * 2;
+                Main.dust[dust1].velocity = velocity * .35f;
+                Main.dust[dust1].fadeIn = 1f;
+
             }
             return true;
 

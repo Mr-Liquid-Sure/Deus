@@ -18,8 +18,8 @@ namespace Deus.Content.Items.Weapons.Tests
         public override void SetDefaults()
         {
            
-            Item.width = 46;
-            Item.height = 48;
+            Item.width = 40;
+            Item.height = 40;
             Item.value = Item.sellPrice(gold: 2, silver: 50);
             Item.rare = ItemRarityID.Green;
             Item.useTime = 40;
@@ -123,8 +123,8 @@ namespace Deus.Content.Items.Weapons.Tests
 
         public override void SetDefaults()
         {
-            Projectile.width = 46; 
-            Projectile.height = 48; 
+            Projectile.width = 40; 
+            Projectile.height = 40; 
             Projectile.friendly = true; 
             Projectile.timeLeft = 10000; 
             Projectile.penetrate = -1; 

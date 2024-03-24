@@ -13,7 +13,7 @@ namespace Deus.Common.Globals
         {
             if (shop.NpcType == NPCID.Merchant)
             {
-                shop.Add<LovecraftPaper>();
+                
             }
         }
     }

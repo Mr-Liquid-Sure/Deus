@@ -1,25 +1,25 @@
 Mods: {
 	Deus: {
 		Tiles: {
-			PewterOreTile.MapEntry: Pewter Ore Tile
-			EdenSoilTile.MapEntry: Eden Soil Tile
-			EdenSoilGrassTile.MapEntry: Eden Soil Grass Tile
+			PewterOreTile.MapEntry: Pewter Ore
+			EdenSoilTile.MapEntry: Eden Soil
+			EdenSoilGrassTile.MapEntry: Eden Soil Grass
 			EdenSoilLongGrass.MapEntry: Eden Soil Long Grass
-			EdenMushroomT.MapEntry: Eden Mushroom T
-			EdenMushroomT2.MapEntry: Eden Mushroom T2
-			EdenStoneTile.MapEntry: Eden Stone Tile
-			EdenMushroomTile.MapEntry: Eden Mushroom Tile
+			EdenMushroomT.MapEntry: Eden Mushroom
+			EdenMushroomT2.MapEntry: Eden Mushroom
+			EdenStoneTile.MapEntry: Eden Stone
+			EdenMushroomTile.MapEntry: Eden Mushroom
 		}
 
 		Buffs: {
 			WoodenPendantBuff: {
 				DisplayName: Wooden Pendant Buff
-				Description: Mods.Deus.Buffs.WoodenPendantBuff.Description
+				Description: Decreases the defence of enemies that come into contact with it
 			}
 
 			WoodenPendantDebuff: {
 				DisplayName: Wooden Pendant Debuff
-				Description: Mods.Deus.Buffs.WoodenPendantDebuff.Description
+				Description: L bozo -2 defence
 			}
 		}
 
@@ -63,13 +63,8 @@ Mods: {
 				Tooltip: ""
 			}
 
-			LovecraftPaper: {
-				DisplayName: Lovecraft Paper
-				Tooltip: ""
-			}
-
 			Book11: {
-				DisplayName: Book11
+				DisplayName: A gods guide
 				Tooltip: ""
 			}
 
@@ -107,36 +102,31 @@ Mods: {
 				DisplayName: Pewter Sword
 				Tooltip: ""
 			}
+
+			LunarLense: {
+				DisplayName: Lunar Lense
+				Tooltip: Increased night vision and a slight boost to critical strike chance.
+			}
 		}
 
 		Projectiles: {
-			WoodenCrossProj.DisplayName: Wooden Cross Proj
-			CrystalClusterProj.DisplayName: Crystal Cluster Proj
-			VetSpearProj.DisplayName: Vet Spear Proj
-			ExampleCustomSwingProjectile.DisplayName: Example Custom Swing Projectile
-			PewterSwordProjectile.DisplayName: Pewter Sword Projectile
+			WoodenCrossProj.DisplayName: Wooden Cross
+			CrystalClusterProj.DisplayName: Crystal Cluster
+			VetSpearProj.DisplayName: Vet Spear
+			ExampleCustomSwingProjectile.DisplayName: Example Custom Swing
+			PewterSwordProjectile.DisplayName: Pewter Sword
 			VetSpike.DisplayName: Vet Spike
 		}
 
 		NPCs: {
-			SmallSlimeG.DisplayName: Small Slime G
+			SmallSlimeG.DisplayName: Small Slime
 			OwlwingHarpy.DisplayName: Owlwing Harpy
 		}
-	}
-}
 
-DamageClasses.Heretic.DisplayName: Heretic Damage
-Projectiles.GunBarrelFlash.DisplayName: Gun Barrel Flash
-Tiles.PewterOreTile.MapEntry: Pewter Ore Tile
-
-Buffs: {
-	WoodenPendantBuff: {
-		DisplayName: Wooden Pendant Buff
-		Description: Mods.Deus.Buffs.WoodenPendantBuff.Description
+		"Keybinds.Technicians Call.DisplayName": Technicians  Call
 	}
 
-	WoodenPendantDebuff: {
-		DisplayName: Wooden Pendant Debuff
-		Description: Mods.Deus.Buffs.WoodenPendantDebuff.Description
-	}
+	DamageClasses.Heretic.DisplayName: Heretic Damage
+	Projectiles.GunBarrelFlash.DisplayName: Gun Barrel Flash
+	Tiles.PewterOreTile.MapEntry: Pewter Ore Tile
 }

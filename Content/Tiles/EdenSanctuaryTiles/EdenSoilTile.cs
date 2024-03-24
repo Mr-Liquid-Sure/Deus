@@ -11,7 +11,7 @@ namespace Deus.Content.Tiles.EdenSanctuaryTiles
     {
         public override void SetStaticDefaults()
         {
-            Main.tileMergeDirt[Type] = true;
+            
 
             Deus.tileMerge[Type, Mod.Find<ModTile>("EdenSoilGrassTile").Type] = true;
             Main.tileSolid[Type] = true;

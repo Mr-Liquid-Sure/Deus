@@ -1,10 +1,4 @@
-﻿using Terraria;
-using Terraria.GameContent.Bestiary;
-using Terraria.ID;
-using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using System;
+﻿
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent;
@@ -13,6 +7,20 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using ReLogic.Content;
+using Terraria;
+using Terraria.Audio;
+using Terraria.DataStructures;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria.ModLoader.Utilities;
+using Terraria.UI;
 
 namespace Deus.Content.NPCs.Enemies
 {
@@ -52,51 +60,95 @@ namespace Deus.Content.NPCs.Enemies
             NPC.DeathSound = SoundID.NPCDeath44;
             NPC.value = Item.buyPrice(0, 0, 2, 15);
             NPC.knockBackResist = 0.5f;
-
+            NPC.aiStyle = -1;
             NPC.noGravity = true;
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo) => spawnInfo.SpawnTileY < Main.rockLayer ? SpawnCondition.OverworldNightMonster.Chance * 0.12f : 0f;
         //This code ahead is probably increadibly unpractible
-        private double Timer;//Timer for flying state
-        private double Timer2;//Timer for when its not flying
-        bool Flying = true;//flying state
-        public override void OnSpawn(IEntitySource source)
+        
+        private enum ActionState
         {
-            Timer = 0;
-            Flying = true;
+            AttackFly,
+            HoverFly
         }
+        public ref float AI_State => ref NPC.ai[0];
+        public ref float AI_Timer => ref NPC.ai[1];
+
+        public ref float AI_Timmersss => ref NPC.ai[2];
 
         public override void AI()
         {
-            Player target = Main.player[NPC.target];
-            NPC.TargetClosest();
-            if (Flying)
+            switch (AI_State)
             {
-                Vector2 center = NPC.Center;
-                Timer++;
-                //Were the code for the flying state will be,
-                //Should fly over the players head, by around 20 blocks, and shoot feathers at the player
+                case (float)ActionState.AttackFly:
+                    Attacking();
+                    break;
+                case (float)ActionState.HoverFly:
+                    Hover();
+                    break;
+
+                    /*Player target = Main.player[NPC.target];
+                    NPC.TargetClosest();
+                    if (Flying)
+                    {
 
 
+                        AIType = 205;
+                        NPC.aiStyle = 5;
+                    }
+                    if (Timer % 200 == 0)
+                    {
+                        Flying = false;//after 200 ticks or whatever it switches state to not flying
+                    }
+                    if (!Flying)
+                    {
+
+                        if (Timer2 % 100 == 0)//tbh idk if this works
+                        {
+                            Flying = true;
+                        }
+                    }*/
+
             }
-            if (Timer % 200 == 0)
+        }
+        private void Attacking()
+        {
+
+            NPC.TargetClosest(true);
+            AI_Timer++;
+            NPC.aiStyle = 5;
+            AIType = NPCID.Harpy;
+            if (AI_Timer == 1 && Main.netMode != NetmodeID.MultiplayerClient)
             {
-                Flying = false;//after 200 ticks or whatever it switches state to not flying
+                AI_Timmersss = Main.rand.NextBool() ? 200 : 150;
+                NPC.netUpdate = true;
             }
-            if (!Flying)
+            if (AI_Timer > AI_Timmersss)
             {
-                Timer2 = 0;
-                Timer++;
-               //bacicaly its just a short dash at the player, this code heavily needs optimising
-                if (Timer2 % 100 == 0)//tbh idk if this works
-                {
-                    Flying = true;
-                }
+                AI_State = (float)ActionState.HoverFly;
+                AI_Timer = 0;
             }
+            //AI_State = (float)ActionState.HoverFly;
+            // AI_Timer = 0;
 
         }
+        
+        private void Hover()
+        {
+            AI_Timer++;
 
+            if (AI_Timer == 1)
+            {
+               
+            }
+            else if (AI_Timer > 40)
+            {
+                // after .66 seconds, we go to the hover state. //TODO, gravity?
+                AI_State = (float)ActionState.AttackFly;
+                AI_Timer = 0;
+            }
+        }
         public override void HitEffect(NPC.HitInfo hit)
         {
             if (NPC.life <= 0 && Main.netMode != NetmodeID.Server)

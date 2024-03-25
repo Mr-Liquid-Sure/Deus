@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ngLNPuaO0vQrLykoo7mIrNdV2zWM7UBm3ebbahS9y+bq0lN0fRZLeRzSGrmDXA+IwL/kwbPg3DtP3a+ycRG1Cw==",
+  "dgSpecHash": "O8PFjbICjhwQuzEE5SSp8fW4wizL3T1cK3ZZzx+c4CVJpp5O12rn8ZPuLaZa3Qg+gH5PQ8ARlO+MKorV0+WjzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mandk\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Deus\\Deus.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mandk\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+    "C:\\Users\\ADMIN\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using Terraria.Audio;
 using Deus.Content.Buffs.PreHM;
 using Terraria.UI;
+using System;
 
 namespace Deus.Content.Items.Accessories
 {
@@ -120,15 +121,10 @@ namespace Deus.Content.Items.Accessories
                 Timer--;
             }
         }
-        
-
-
 
         private bool CanUseDash()
         {
-            return SpecialSetBonus
-
-                && !Player.mount.Active; 
+            throw new NotImplementedException();
         }
     }
 }

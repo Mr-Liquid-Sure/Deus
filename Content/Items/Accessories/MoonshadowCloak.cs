@@ -1,23 +1,26 @@
 using Terraria;
-using Terraria.DataStructures;
-using Terraria.ModLoader;
 using Terraria.ID;
-using Microsoft.Xna.Framework.Graphics;
+using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Terraria.GameContent;
+using Microsoft.Xna.Framework.Graphics;
+using System.Collections.Generic;
+using Terraria.Audio;
 using Deus.Content.Buffs.PreHM;
+using Terraria.UI;
+using System;
 using Deus.Content.Items.Sets.PewterSet;
 using Deus.Content.Items.Materials;
+using Deus.Common.Systems;
+using Terraria.GameInput;
+using Humanizer;
+using Mono.Cecil;
+using static Humanizer.On;
 
 namespace Deus.Content.Items.Accessories
 {
-    internal class LunarLense : ModItem
+    internal class MoonshadowCloak : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(4, 10));
-            ItemID.Sets.AnimatesAsSoul[Type] = true;
-        }
+        
 
         public override void SetDefaults()
         {
@@ -30,18 +33,23 @@ namespace Deus.Content.Items.Accessories
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetCritChance(DamageClass.Generic) += 5;
-            player.AddBuff(BuffID.NightOwl,60);
+
+
         }
 
         public override void AddRecipes()
         {
             CreateRecipe()
-            .AddIngredient(ItemID.Lens, 1)
-            .AddIngredient(ModContent.ItemType<OwlfeatherPlume>(), 3)
+            .AddIngredient(ModContent.ItemType<OwlfeatherPlume>(), 5)
             .AddTile(TileID.WorkBenches)
             .Register();
         }
 
     }
+  
+
+
+
+    
+
 }

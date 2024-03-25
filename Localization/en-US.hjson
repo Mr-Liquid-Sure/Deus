@@ -107,6 +107,16 @@ Mods: {
 				DisplayName: Lunar Lense
 				Tooltip: Increased night vision and a slight boost to critical strike chance.
 			}
+
+			MoonshadowCloak: {
+				DisplayName: Moonshadow Cloak
+				Tooltip: ""
+			}
+
+			OwlfeatherPlume: {
+				DisplayName: Owlfeather Plume
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
@@ -123,7 +133,10 @@ Mods: {
 			OwlwingHarpy.DisplayName: Owlwing Harpy
 		}
 
-		"Keybinds.Technicians Call.DisplayName": Technicians  Call
+		Keybinds: {
+			"Technicians Call.DisplayName": Technicians  Call
+			"Moon summon.DisplayName": Moon summon
+		}
 	}
 
 	DamageClasses.Heretic.DisplayName: Heretic Damage
